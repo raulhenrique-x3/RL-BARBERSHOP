@@ -16,3 +16,7 @@
     3. Ajustei a largura e altura de alguns elementos da página afim de versatilizar a navegação no site;
     4. Experimentei algumas cores ao body e as seções da página afim de aprimorar a interface.
     
+26/02/2022
+    1. Alterei as cores de alguns elementos (workImgIcon, h3Txt) da segunda seção da página afim de melhorar a estética visual do site.
+    2. Adicionei a tag "<a>" para a "<div class=h3Txt>" afim de gerar acesso ao portifolio no Instagram ao clicar.
+    

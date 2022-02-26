@@ -36,7 +36,7 @@ h1{
 
 body{
     width: 100vw;
-    background-color: rgb(35, 35, 35);
+    background-color: #232323;
     overflow-x: hidden;
 }
 
@@ -75,8 +75,8 @@ body{
     font-size: 32px;
     font-family: 'Open Sans', sans-serif;
     color: #ffe864;
-    background-color: rgb(12, 12, 12);
-    border-top: 2px solid rgb(40, 40, 40);
+    background-color: #0c0c0c;
+    border-top: 2px solid #282828;
     height: 100vh;
 }
 
@@ -87,7 +87,7 @@ body{
 .sectAboutUs{
     width: 90vw;
     margin-top: 5vh;
-    background-color: rgb(20, 20, 20);
+    background-color: #1a1a1a;
     padding: 1vw 10vw 10vw 10vw;
 }
 
@@ -102,7 +102,7 @@ body{
 
 .workImgIcon{
     margin-top: 5vh;
-    background-color: white;
+    background-color: #ffe864;
     border-radius: 100%;
     width: 5vw;
     height: 10vh;
@@ -123,6 +123,13 @@ h2{
     flex-direction: column;
 }
 
+.h3Txt a{
+    text-decoration: none;
+    color: #ffe864;
+    text-shadow: 2px 2px #000000;
+
+}
+
 h3{
     margin-top: 10vh;
     text-align: center;
@@ -130,5 +137,5 @@ h3{
 }
 
 h2, h3, .expWork{
-    text-shadow: 2px 2px black;
+    text-shadow: 2px 2px #000000;
 }
