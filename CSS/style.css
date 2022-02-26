@@ -4,6 +4,9 @@
     margin: 0;
 }
 
+
+/*Aqui Começa o conteúdo do header*/
+
 .headerBox{
     position: fixed;
     display: flex;
@@ -11,13 +14,13 @@
     justify-content: space-evenly;
     min-width: 100vw;
     min-height: auto;
-    background-color: rgb(0, 0, 0, 0.5);
+    background-color: #00000080;
     padding: 15px;
-    border-bottom: 1px solid rgb(255, 255, 255, 0.4);
+    border-bottom: 1px solid #ffffff66;
 }
 
-h2{
-    color: rgb(255, 232, 100);
+h1{
+    color: #ffe864;
     font-family: 'Bebas Neue', cursive;
     font-size: 32px;
 }
@@ -28,30 +31,104 @@ h2{
     font-family: 'Open Sans', sans-serif;
     padding: 10px;
     border-radius: 2px;
-    border-bottom: 1px white solid;
+    border-bottom: 1px #ffffff solid;
 }
 
-.mainCont{
-    background-image: linear-gradient(rgb(27, 27, 27), rgb(0, 0, 0));
+body{
+    width: 100vw;
+    background-color: rgb(35, 35, 35);
+    overflow-x: hidden;
 }
 
-.imgBox{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
+/*Aqui começa o carrossel da primeira seção de informações*/
 
 .servCont{
     display: flex;
-    align-items: center;
+    flex-direction: column;
+    height: 90vh;
+}
+
+.imgCrrsl{
+    flex: auto;
+    overflow: hidden;
+}
+
+.servImgs{
+    height: 100vh;
+    display: flex;
+}
+
+.servContImg{
+    width: 100vw;
+    height: 90vh;
+    transform: translateX(1);
+    transition: all 2s ease;
+}
+
+/*Aqui começa a segunda seção de informações*/
+
+.sectInfo{
+    display: flex;
+    flex-direction: column;
     justify-content: center;
-}
-
-.mainTxt{
-    background-color: rgb(0, 0, 0, 0.8); 
-    border-radius: 2px;
-    width: 50vw;   
-    justify-content: center; 
     align-items: center;
+    font-size: 32px;
+    font-family: 'Open Sans', sans-serif;
+    color: #ffe864;
+    background-color: rgb(12, 12, 12);
+    border-top: 2px solid rgb(40, 40, 40);
+    height: 100vh;
 }
 
+.sectInfo p{
+    border-bottom: 1px solid #ffe864;
+}
+
+.sectAboutUs{
+    width: 90vw;
+    margin-top: 5vh;
+    background-color: rgb(20, 20, 20);
+    padding: 1vw 10vw 10vw 10vw;
+}
+
+.sectAboutUs p{
+    text-align: center;
+}
+
+.workImgs{
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.workImgIcon{
+    margin-top: 5vh;
+    background-color: white;
+    border-radius: 100%;
+    width: 5vw;
+    height: 10vh;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+h2{
+    font-family: 'Bebas Neue', cursive;
+    text-align: center;
+}
+
+.h3Txt{
+    width: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+h3{
+    margin-top: 10vh;
+    text-align: center;
+    font-size: 0.75rem;
+}
+
+h2, h3, .expWork{
+    text-shadow: 2px 2px black;
+}
