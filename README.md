@@ -18,5 +18,10 @@
     
 26/02/2022
     1. Alterei as cores de alguns elementos (workImgIcon, h3Txt) da segunda seção da página afim de melhorar a estética visual do site.
-    2. Adicionei a tag "<a>" para a "<div class=h3Txt>" afim de gerar acesso ao portifolio no Instagram ao clicar.
+    2. Adicionei a tag "< a >" para a "< div class=h3Txt >" afim de gerar acesso ao portifolio no Instagram ao clicar.
+    
+27/02/2022
+    1. Corrigi um error no CSS onde os elementos da página não ficavam dentro do "vw" ou seja, eles estouravam na tela.
+    2. Adicionei um botão de scroll para o topo da página utilizando o Javascript para determinar a função;
+    3. Direcionei o elemento "< a >" no botão de serviços para direcionar a seção "< div class="sectInfo" id="services" >"
     

@@ -30,3 +30,12 @@ document.querySelector('.servImgs').style.width =
     }
     setInterval(goNext, 3200)
 //Fim do sistema de Carrossel//
+//Inicio do sistema de AutoScrollUp da página//
+
+    function scrollUp(){
+        window.scrollTo({
+            top: 0,
+            behavior: 'smooth'
+        })
+    }
+//Fim de função//
