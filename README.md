@@ -25,3 +25,6 @@
     2. Adicionei um botão de scroll para o topo da página utilizando o Javascript para determinar a função;
     3. Direcionei o elemento "< a >" no botão de serviços para direcionar a seção "< div class="sectInfo" id="services" >"
     
+28/02/2022
+    1. Ajustei o botão de scroll para se posicionar no fim da página.
+    2. 
