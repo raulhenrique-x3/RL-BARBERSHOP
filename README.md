@@ -37,4 +37,6 @@
     4. Adicionei funções com Jquery para deslizar suavemente entre as seções;
     5. Fiz o media query do site tornando-o responsivo;
     6. Novas seções adicionadas;
-    7. PROJETO FINALIZADO.
+    
+22/03/2022
+    1. Fiz modificações nos widths mobile afim de ajustar elementos que estavam estourando na página

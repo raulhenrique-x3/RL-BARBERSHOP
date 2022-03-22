@@ -355,7 +355,7 @@ footer{
         display: flex;
         justify-content: center;
         align-items: center;
-        height: 30vh;
+        height: 35vh;
     }
 
     .galeria{
@@ -377,7 +377,7 @@ footer{
         display: flex;
         justify-content: space-around;
     }
-    
+
     .contatosInfo{
         width: 100%;
         display: flex;
