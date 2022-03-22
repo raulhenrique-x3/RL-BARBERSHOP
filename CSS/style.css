@@ -38,20 +38,12 @@ h1{
     border-bottom: 1px #ffffff solid;
 }
 .headerBox a:hover{
-    background-color: #1a1a1a;
-    color: #ffe864;
+    background-color: #ffe864;
+    color: #000000;
 }
+
 /*Aqui acaba o header*/
 
-body{
-    max-width: 100vw;
-    background-color: #232323;
-}
-
-section{
-    max-width: 100vw;
-    height: 100vh;
-}
 
 
 /*Aqui começa o carrossel da primeira seção de informações*/
@@ -82,7 +74,7 @@ section{
 /*Aqui começa a segunda seção de informações*/
 
 .mainCont{
-    max-width: 100vw;
+    width: 100%;
 
 }
 .sectInfo{
@@ -284,6 +276,7 @@ footer{
     align-items: center;
     justify-content: space-evenly;
     background-color:#ffe864 ;
+    border-radius: 50px;
 }
 
 .devRaul p{
@@ -310,6 +303,32 @@ footer{
         display: none;
     }
 
+    .servCont{
+        width: 100%;
+        height: 70vh;
+        background-color: #ffe864;
+    }
+
+    .imgCrrsl{
+        display: flex;
+        justify-content: center;
+        align-items: center ;
+    }
+
+    .servImgs{
+        display: flex;
+        justify-content: center;
+        align-items: center ;
+    }
+
+    .servContImg{
+        height: 50vh;
+    }
+
+    .sectInfo{
+        width: 100%;
+    }
+
     .sectAboutUs{
         width: 90%;
         display: flex;
@@ -332,24 +351,48 @@ footer{
         display: none;
     }
 
+    .sectInfo1{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 30vh;
+    }
+
     .galeria{
-        width: 100%;
+        width: 80%;
+        height: 80%;
     }
 
     .iAmInfos{
         width: 90%;
+        margin-bottom: 20%;
     }
 
     .iAmInfos p{
         font-size: 1.1rem;
     }
 
-    .contatosInfo{
-        width: 100%;
+    .contatos{
+        height: 20vh;
+        display: flex;
+        justify-content: space-around   ;
     }
 
+    .contatosInfo{
+        width: 100%;
+        display: flex;
+        justify-content: space-around;
+    }
+    
+
     .devRaul{
-        width: 100%; 
+        width: 80%;
+        border-radius: 50px;
+    }
+
+    .devRaul p{
+        font-size: 1rem;
+        text-align: center;
     }
 }
 
