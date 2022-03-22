@@ -5,39 +5,60 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="./CSS/style.css">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <link rel="shortcut icon" href="./Imagens/iconsImgs/tesouras.png" type="image/x-icon">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
     <title>RL BARBERSHOP</title>
 </head>
 <body>
 
-    <header class="headerBox">
-        <a href="./index.html" style="border: none;"><h1 class="rlLogo">Richard Leão Barbershop</h1></a>
-        <a href="#">Contatos</a>
-        <a href="#">Galeria</a>
-        <a href="#services">Serviços</a>
-        <a href="#">Unidades</a>
+    <header>
+        <div class="headerBox">
+            <a href="#servCont" style="border: none;"><h1 class="rlLogo">Richard Leão Barbershop</h1></a>
+            <a href="#contatos">Contatos</a>
+            <a href="#galeria">Galeria</a>
+            <a href="#services">Serviços</a>
+            <a href="#quemSouEu">Quem sou eu?</a>
+        </div>
+        <div class="dropdown">
+            <a class="btn btn-secondary dropdown-toggle" href="#" role="button" id="dropdownMenuLink" data-bs-toggle="dropdown" aria-expanded="false">
+            Menu
+            </a>
+
+            <ul class="dropdown-menu" aria-labelledby="dropdownMenuLink">
+                <li><a class="dropdown-item" href="#contatos">Contatos</a></li>
+                <li><a class="dropdown-item" href="#galeria">Galeria</a></li>
+                <li><a class="dropdown-item" href="#services">Serviços</a></li>
+                <li><a class="dropdown-item" href="#quemSouEu">Quem sou eu?</a></li>
+            </ul>
+        </div>
     </header>
 
     <section class="mainCont">
 
-        <div class="servCont">
+        <div class="servCont" id="servCont">
             <div class="imgCrrsl">
                 <div class="servImgs">
-                    <img class="servContImg" src="./Imagens/vintage-chairs-in-barbershop.jpg">
-                    <img class="servContImg" src="./Imagens/client-doing-hair-cut-at-a-barber-shop-salon.jpg">
-                    <img class="servContImg" src="./Imagens/young-man-at-barbershop-trimming-hair.jpg">
+                    <img class="servContImg" src="./Imagens/capaCarousel1.png">
+                    <!-- <img class="servContImg" src="./Imagens/client-doing-hair-cut-at-a-barber-shop-salon.jpg">
+                    <img class="servContImg" src="./Imagens/young-man-at-barbershop-trimming-hair.jpg"> -->
                 </div>
             </div>
         </div>
 
         <div class="sectInfo" id="services">
             <p>Sobre meu trabalho</p>
-            <div class="sectAboutUs">
-                <h2>Trabalho pensado para sua comodidade e economia!</h2>
-                <p class="expWork">Sabemos que os preços da gasolina e ônibus estão caros, não é?
+            <div class="sectAboutUs" data-aos="fade-right" data-aos-duration="1500">
+                <h2>Trabalho pensando na sua comodidade e economia!</h2>
+                <p class="expWork">
+                    Sabemos que os preços da gasolina e ônibus estão caros, não é?<br>
                     Sabendo disso decidi ir até você para fazer o seu corte de cabelo te poupando tempo e dinheiro.
                 </p>
                 <div class="workImgs">
@@ -50,19 +71,19 @@
 
                     <div class="workImgIcon" style="background-image: url(./Imagens/iconsImgs/iconClock.png);">
                         <div class="h3Txt">
-                            <h3>Pensando no seu tempo! <br> Agende o melhor horário para você.</h3>
+                            <h3>Pensando no seu tempo!</h3>
                         </div>
                     </div>
 
                     <div class="workImgIcon" style="background-image: url(./Imagens/iconsImgs/iconCamera.png);">
                         <a href="#"><div class="h3Txt"></a>
-                                <a href="#"><h3>Clique para acessar a minha galeria de fotos!</h3></a>
+                                <a href="#"><h3>Galeria de fotos!</h3></a>
                             </div>
                         </div>
 
                     <div class="workImgIcon" style="background-image: url(./Imagens/iconsImgs/iconMoney.PNG);">
                         <div class="h3Txt">
-                            <h3>O melhor serviço pelo menor preço! Entre em contato e faça o orçamento.</h3>
+                            <h3>O menor preço!</h3>
                         </div>
                     </div>
 
@@ -70,42 +91,87 @@
 
             </div>
         </div>
-        <div class="buttonDef" style=
-                                "display: flex;
-                                justify-content: end;">
-            <button class="navButtonUp" 
-                            style=
-                            "position: fixed;
-                            width: 50px; 
-                            height: 50px;
-                            background-color: #ffe864;
-                            bottom: 0;
-                            border: 0;
-                            cursor: pointer;"
-                            onclick="scrollUp()">
-            <img src="./Imagens/iconsImgs/navigationUp.PNG"
-                            style=
-                            "background-position: center;
-                            background-repeat: no-repeat;">
-            
+
+        <div class="buttonDef">
+            <button class="navButtonUp" onclick="scrollUp()">
+                <img id="navUpIcon" src="./Imagens/iconsImgs/navigationUp.PNG">
             </button>
         </div>
-        <div class="sectInfo1">
-            
+        
+        <div class="sectInfo1" id="galeria" >
+            <h1>Galeria</h1>
+            <div class="galeria"><div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="carousel" data-aos="zoom-out">
+                <div class="carousel-indicators">
+                    <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+                    <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
+                    <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" aria-label="Slide 3"></button>
+                </div>
+                <div class="carousel-inner">
+                    <div class="carousel-item active">
+                        <img src="./Imagens/cliente01.png" class="d-block w-100 h-40" alt="...">
+                </div>
+                <div class="carousel-item">
+                    <img src="./Imagens/cliente02.png" class="d-block w-100 h-40" alt="...">
+                </div>
+                <div class="carousel-item">
+                    <img src="./Imagens/cliente03.png" class="d-block w-100 h-40" alt="...">
+                </div>
+                </div>
+                <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
+                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Previous</span>
+                </button>
+                <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="next">
+                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Next</span>
+                </button>
+            </div>
+            </div>
         </div>
+
+
+        <div class="whoIam" id="quemSouEu">
+            <h1>Quem sou eu?</h1>
+            <div class="iAmInfos" data-aos="fade-up" data-aos-duration="1000">
+                <img id="richCerti" src="./Imagens/richardCertificado.jpg" alt="richardCertificado">
+                <p>Eu sou Richard Leão, tenho 21 anos e sou um barbeiro profissional.
+                    <br>
+                    Durante a pandemia da COVID-19 tomar novas condutas sobre as relações sociais e, sabendo disso, passei 
+                    a pensar em como eu poderia manter meu negócio prosperando e gerar novos clientes!
+                    <br>
+                    Sendo assim decidi ser um barbeiro que vai até o conforto da sua residência fazer o meu ótimo trabalho. 
+                </p>
+            </div>
+        </div>
+
+        <div class="contatos" id="contatos">
+            <div class="contatosInfo">
+                <div class="contactIcon" data-aos="zoom-in-down">
+                    <a href="https://wa.me/55081983581538" target="_blank" rel="noopener noreferrer">
+                    <img id="contactIcon" src="./Imagens/iconsImgs/whatsAppIcon.PNG" alt="whatsAppIcon">
+                        <p>Whatsapp</p></a>
+                </div>
+
+                <div class="contactIcon" data-aos="zoom-in-down">
+                    <a href="https://www.instagram.com/richardleao.barbearia/" target="_blank" rel="noopener noreferrer">
+                        <img id="contactIcon" src="./Imagens/iconsImgs/instagramIcon.PNG" alt="instagramIcon">
+                        <p>Instagram</p></a>
+                </div>
+            </div>
+        </div>
+
+
+        <footer>
+            <div class="devRaul">
+                <p>Desenvolvido por Raul Henrique</p>
+                <div class="devRaulIcons"><a href="https://www.linkedin.com/in/%E2%8C%A8%EF%B8%8Fraul-henrique%F0%9F%96%B1%EF%B8%8F-92ab7021b/" target="_blank" rel="noopener noreferrer"><img src="./Imagens/iconsImgs/linkedinIcon.PNG" alt="" srcset=""></div></a>
+                <div class="devRaulIcons"><a href="https://github.com/raulhenrique-x3" target="_blank" rel="noopener noreferrer"><img src="./Imagens/iconsImgs/iconDeveloperGitHub.PNG" alt="" srcset=""></div></a>
+                <div class="devRaulIcons"><a href="http://" target="_blank" rel="noopener noreferrer"><img src="./Imagens/iconsImgs/earthIcon.PNG" alt="" srcset=""></div></a>
+            </div>
+        </footer>
     </section>
 
 </body>
 <script src="./Javascript/script.js"></script>
 </html>
-<!--
-<a href="https://www.streamlinehq.com">Free Interface Page Controller Scroll Up Double PNG icon by Streamline</a>
-<a href='https://br.freepik.com/fotos-vetores-gratis/beleza'>Beleza foto criado por master1305 - br.freepik.com</a>
-<a href='https://br.freepik.com/fotos-vetores-gratis/fundo'>Fundo foto criado por rawpixel.com - br.freepik.com</a>
-<a href='https://br.freepik.com/fotos-vetores-gratis/mao'>Mão foto criado por master1305 - br.freepik.com</a>
-<a href='https://br.freepik.com/fotos-vetores-gratis/moda'>Moda foto criado por senivpetro - br.freepik.com</a>
-<a href='https://br.freepik.com/fotos-vetores-gratis/pessoas'>Pessoas foto criado por senivpetro - br.freepik.com</a>
-<a href="https://www.streamlinehq.com">Free Interface Edit Scissors PNG icon by Streamline</a>
-<a href="https://www.streamlinehq.com">Free Interface Time Clock Circle PNG icon by Streamline</a>
-<a href="https://www.streamlinehq.com">Free Image Camera 1 PNG icon by Streamline</a>
-<a href="https://www.streamlinehq.com">Free Money Cash Bag Dollar PNG icon by Streamline</a>-->
+

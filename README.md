@@ -3,6 +3,8 @@
         • HTML5;
         • CSS3;
         • Javascript;
+        • Bootstrap
+        • Jquery
         • Photoshop CC.
     Em breve irei adicionar novas funções de Javascript para auxiliar a funcionalidade do site.
     Pretendo também passar o protesto para ReactJs posteriormente.
@@ -27,4 +29,12 @@
     
 28/02/2022
     1. Ajustei o botão de scroll para se posicionar no fim da página.
-    2. 
+
+21/03/2022
+    1. Removi o carrossel da homepage;
+    2. Adicionei um carrossel em bootstrap para a seção da galeria;
+    3. Adicionei animações ao rolar a página usando a AOS "Animate On Scroll Library";
+    4. Adicionei funções com Jquery para deslizar suavemente entre as seções;
+    5. Fiz o media query do site tornando-o responsivo;
+    6. Novas seções adicionadas;
+    7. PROJETO FINALIZADO.
