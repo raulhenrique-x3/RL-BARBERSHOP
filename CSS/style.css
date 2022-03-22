@@ -375,9 +375,9 @@ footer{
     .contatos{
         height: 20vh;
         display: flex;
-        justify-content: space-around   ;
+        justify-content: space-around;
     }
-
+    
     .contatosInfo{
         width: 100%;
         display: flex;
